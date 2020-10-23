@@ -1,0 +1,32 @@
+/* colores
+fondo verde opal : #BAD1CD
+texto misty rose: #F2D1C9
+links blue yonder: #587792
+clicked links: #0E1C36
+titulos: #AA4465
+
+*/
+
+*{
+margin: 0;
+padding 2px;
+background-color: #BAD1CD;
+color: #F2D1C9
+}
+
+a{
+  color:#587792
+}
+a:hover{
+  color:#0E1C36
+}
+.txt1{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+h1 h2 {
+  align-self: center;
+  color: #AA4465;
+
+}
