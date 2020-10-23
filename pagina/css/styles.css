@@ -9,11 +9,15 @@ titulos: #AA4465
 
 *{
 margin: 0;
-padding 2px;
+padding: 2px;
 background-color: #BAD1CD;
 color: #0E1C36
 }
-
+body{
+  background-color: #BAD1CD;
+  padding: 2px;
+  margin:2px;
+}
 a{
   color:#587792
 }
