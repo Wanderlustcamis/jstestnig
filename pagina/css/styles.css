@@ -40,13 +40,32 @@ p{
   align-self: center;
   color: #AA4465;
   text-align: center;
+  margin:1px;
+  padding:2px;
 
 }
 h1 {
   align-content: center;
   text-align: center;
   color: #AA4465;
+  margin:1px;
+  padding:2px;
 
+}
+
+h3{
+  align-content: center;
+  text-align: center;
+  color: #AA4465;
+  margin:1px;
+  padding:2px;
+
+}
+h4 {
+  color: #AA4465;
+  margin:4px;
+  padding:4px;
+  margin-right: 20px;
 }
 .nav-link{
  color: #587792
@@ -66,4 +85,43 @@ h1 {
 }
 .img-fluid{
   align-items: center;
+}
+.salmon{
+  margin:4px;
+  padding: 2px;
+  color:#0E1C36;
+  display: flex;
+  flex-direction: column;
+}
+
+.prep{
+  list-style: none;
+  color:#0E1C36;
+  display: flex;
+  flex-direction: column;
+  padding:4px;
+  margin : 4px;
+}
+
+.ind{
+
+  color:#0E1C36;
+  display: flex;
+  flex-direction: row;
+}
+.met{
+
+  color:#0E1C36;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.ing{
+  color:#0E1C36;
+  display: flex;
+  flex-direction: column;
+  padding:4px;
+  margin : 2px;
+
 }
