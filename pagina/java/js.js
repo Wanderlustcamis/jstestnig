@@ -9,13 +9,13 @@ function week() {
           for (var num = 0; num < 7; num++) {
             switch (num) {
               case num % 2 == 0:
-                alert(`${dia[num]} PAR`);
+                alert(`Yoga days`);
                 break;
                 case num == 6:
                   alert("SUNDAY FUNDAY!");
                   break;
                 case num % 2 != 0:
-                  alert(`${dia[num]} IMPAR`);
+                  alert(`Exercise`);
         	 break;
               }
               num++
