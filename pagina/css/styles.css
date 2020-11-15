@@ -67,6 +67,20 @@ h4 {
   padding:4px;
   margin-right: 20px;
 }
+
+button{
+  border-radius: 25px;
+  border-color: #0E1C36;
+  font-family: Titillium;
+  font-size: 18px;
+  padding: 4px;
+  margin:2px;
+}
+
+button:hover{
+  color: #AA4465;
+  border-color: #AA4465;
+}
 .nav-link{
  color: #587792
 }
