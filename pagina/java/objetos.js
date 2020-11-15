@@ -8,7 +8,7 @@ healthy.living ="exercise" ;
     this.life=life;
     this.living=living;
 }
-this.cal = function (n1, ope, n2) {
+this.cal = function Cal (n1, ope, n2) {
   n1= Number(n1)
   n2= Number (n2)
     switch (ope){

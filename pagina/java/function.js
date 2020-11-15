@@ -1,7 +1,6 @@
-
-  function promedio (num1, num2){
-    return (Number (num1) + Number (num2))/2
+function promedio (n1, n2)
+    {
+      var n1 = prompt ("add a number")
+      var n2 = prompt ("add another number")
+    alert (Number (n1) + Number (n2)/2)
   }
-
-  var n1 = prompt ("add a number")
-  var n2 = prompt ("add another number")
