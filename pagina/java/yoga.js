@@ -9,14 +9,14 @@ function week () {
           i++
           for (var num = 0; num < 7; num++)
             switch (num){
-              case num % 2 == 0:
-                alert(`Yoga days`)
+              case num % 2:
+                alert("Yoga days")
                 break
                 case num == 6:
                   alert("SUNDAY FUNDAY!")
                   break
                 case num % 2 != 0:
-                  alert(`Exercise`)
+                  alert("Exercise")
         	 break
          }
               num++
