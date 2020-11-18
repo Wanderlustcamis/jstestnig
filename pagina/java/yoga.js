@@ -3,34 +3,35 @@ function week () {
     var days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
     var dia = ""
     var i = 0;
-        while (i< days.length)
+        while  (i< days.length){
         var dia = days[i]
           console.log(days);
           i++
-          for (var num = 0; num < 7; num++)
-            switch (num){
-              case num = 0:
+        }
+          for (i = 0; i < 7; i++)
+            switch (i){
+              case i == 0:
                 alert("Yoga days")
                 break
-                case num = 2:
+                case i == 2:
                   alert("Yoga days")
                   break
-                  case num = 4:
+                  case i == 4:
                     alert("Yoga days")
                     break
-                case num == 6:
+                case i == 6:
                   alert("SUNDAY FUNDAY!")
                   break
-                case num = 1:
+                case i == 1:
                   alert("Exercise")
         	         break
-                case num = 3:
+                case i == 3:
              alert("Exercise")
              break
-                case num = 5:
+                case i == 5:
                 alert("Exercise")
                 break
 
          }
-              num++
+
             }
