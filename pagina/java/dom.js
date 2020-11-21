@@ -4,8 +4,10 @@ function transition (gray){
 
   document.body.style.transition = "10s ease-in"
   document.body.style.backgroundColor = "gray"
-  document.getElementById("col") = "gray"
-  localStorage.SetItem ("backgroundColor", gray)
+
+  var col = document.getElementById("col")
+   var color = document.CreateElement("p")
+    color.backgroundColor = gray
 
 
 }
