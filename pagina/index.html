@@ -12,6 +12,8 @@
 <script src="java/array.js"> </script>
 <script src="java/array2.js"> </script>
 <script src="java/dom.js"> </script>
+<script src="java/eventos.js"> </script>
+<script src="java/Storage.js"> </script>
 	<meta charset="UTF-8">
 		<title>kk</title>
 
@@ -54,7 +56,7 @@
 	</header>
 	<h1>Khloe</h1>
 	<div class="pic">
-		<img class="img-fluid" src="pic/shape.jpg" alt="khloe">
+		<img class="img-fluid" id="imagen" src="pic/shape.jpg" alt="khloe">
 	</div>
 
 	<article class="txt1" id="col">
@@ -64,12 +66,37 @@
 
 </article>
 
+<button onclick= "transition()">Change outlines</button>
+
+<h4>Subscribe Here</h4>
+  <p>Please fill in the following filds;</p>
+	<ul>
+		<li>
+      <label for="nombre">Name</label>
+        <input type="text" id="nombre" placeholder="Add name" onblur="save(this)">
+					</li>
+				<li>
+      <label for="Telephone">Telephone</label>
+        <input type="tel" id="phone" placeholder="Add phone" onblur="save(this)">
+			</li>
+		<li>
+      <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Add email" onblur="save(this)">
+			</li>
+			<li>
+      <label for="password">Password</label>
+        <input type="password" id="password" placeholder="you will get your passcode as sms" onblur="save(this)">
+			</li>
+			<li>
+      <button class="right btn-large btn-floating blue waves-effect waves-light" onclick= "navegar('confirm.html')"><i class="material-icons">></i></button>
+		</li>
+
 <article>
 	<h1>Recipe</h1>
 	<h2>Herb-Crusted Salmon and Grilled Asparagus Recipe</h2>
 <div class="salmon" id="col">
 
-	<img class="img-fluid sa" src="pic/salmon.jpg" alt="salmon">
+	<img class="img-fluid sa" id="imagen" src="pic/salmon.jpg" alt="salmon">
 	<p>As well as being really tasty, this dish also looks great, so it’s a great meal to make if you are having a special dinner.</p>
 
 </div>
@@ -111,7 +138,7 @@
 		<li>1/4 cup walnuts, chopped
 		</li>
 	</ul>
-		<img class="img-fluid la" src="pic/salad.png" alt="khloeeating">
+		<img class="img-fluid la" id="imagen"  src="pic/salad.png" alt="khloeeating">
 </div>
 
 

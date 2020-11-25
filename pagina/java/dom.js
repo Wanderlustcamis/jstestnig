@@ -1,12 +1,11 @@
 
-
 function transition (gray){
 
   document.body.style.transition = "10s ease-in"
   document.body.style.backgroundColor = "gray"
 
   var col = document.getElementById("col")
-   var color = document.CreateElement("p")
+   var color = document.CreateElementbyname("p")
     color.backgroundColor = gray
 
 
