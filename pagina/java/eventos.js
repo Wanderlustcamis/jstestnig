@@ -1,3 +1,17 @@
-//let imagen = document.getElementsByID('imagen')
+window.onload = function (){
+  getElementById('imagen').onmouseover = Color;
+  getElementById('imagen').onmouseout = Color;
 
-//imagen.addEventListener ("mouseover", () => imagen.style.cursor = "zoom-in")
+}
+ function Color (Evento){
+   var event = Evento;
+   switch (evento.type) {
+     case 'mouseover':
+      this.style.bordercolor = "green";
+       break;
+       case 'mouseout':
+        this.style.bordercolor = "blue";
+        break;
+
+   }
+ }
