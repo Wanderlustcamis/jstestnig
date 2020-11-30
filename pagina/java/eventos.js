@@ -1,11 +1,11 @@
 window.onload = function (){
-  getElementById('imagen').onmouseover = Color;
-  getElementById('imagen').onmouseout = Color;
+  document.getElementById('imagen').onmouseover = Color;
+  document.getElementById('imagen').onmouseout = Color;
 
 }
  function Color (Evento){
    var event = Evento;
-   switch (evento.type) {
+   switch (Evento.type) {
      case 'mouseover':
       this.style.bordercolor = "green";
        break;
