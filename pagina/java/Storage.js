@@ -11,11 +11,11 @@ function save(save) {
         ls.setItem(save.id, save.value)
 }
 
-function retrive () {
+function retrive() {
     if (ls.length > 0) {
         for (let i = 0; i < ls.length; i++) {
             clave = ls.key(i)
-            document.getElementById(clave).value = ls.getItem(clave)
+            document.getElementById("clave").value = ls.getItem("save")
         }
     }
 }
@@ -29,7 +29,7 @@ function confirm() {
    if (ls.length > 0) {
        for (let i = 0; i < ls.length; i++) {
            clave = ls.key(i)
-           document.getElementById("clave").value = ls.getItem("clave")
+           document.getElementById("clave").value = ls.getItem("save")
        }
    }
 }

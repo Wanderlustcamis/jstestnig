@@ -1,11 +1,11 @@
 var jsoninfo = {
-  "age": "32",
-  "weight": "60",
-  "height": "1.57"
+  age: 32 ,
+  weight: 60 ,
+  height: 1.57 
 
 }
 
-alert(jsoninfo).alert()
+alert(JSON.stringify(jsoninfo))
 
 
-console.log(json["age"]);
+console.log(jsoninfo["age"]);
