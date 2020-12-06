@@ -2,12 +2,11 @@ function week () {
     var d = prompt ("which day?");
     var days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
     var dia = days[i]
-    var i = 0;
         while  (i< days.length){
           console.log(days);
           i++
         }
-          for (i = 0; i < 7; i++)
+          for ( var i = 0; i < 7; i++)
             switch (i){
               case "0":
                 alert ("Yoga day")
