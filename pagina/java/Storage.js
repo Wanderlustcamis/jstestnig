@@ -1,5 +1,7 @@
 var ls = localStorage;
 var d = document;
+var clave = document.getElementById("clave")
+var save = document.getElementById("save")
 
  function retrive(){
    d.body.onload =
