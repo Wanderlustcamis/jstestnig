@@ -35,7 +35,14 @@ p{
   text-align: center;
   padding:10px;
   margin:2px;
+  display: contents;
+
 }
+
+p.latlong{
+  display:contents;
+}
+
  h2 {
   align-self: center;
   color: #AA4465;

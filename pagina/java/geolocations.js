@@ -1,16 +1,12 @@
 let latitude = 0
 let longitud = 0
-let info = document.getElementById('latlong')
-let platform = ""
-let TipoDeMapa = ""
-let mapa = ""
-const HEREMAPSAPIKEY=
+let info = document.getElementById("latlong")
 
 function localizame(){
-    navigator.geolocation.getCurrentPosition((position)=>{
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
         latitude = position.coords.latitude
-        longitud = position.coords.longitud
-        informacion.alert = "Your location is" + latitude +" ,"+ longitud
-      }
-  )
+        longitud = position.coords.longitude
+        info.innerText = "Your location is" + latitude +" ,"+ longitud
+      })
 }
