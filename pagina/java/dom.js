@@ -5,6 +5,7 @@ function transition (gray){
   document.body.style.backgroundColor = "gray"
 
 
+
 }
 
 
