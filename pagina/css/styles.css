@@ -161,6 +161,21 @@ img.la{
 
 }
 
+
+ul{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin:4px;
+  text-decoration: none;
+
+}
+
+li{
+  padding: 5px;
+  margin:4px;
+  list-style: none;
+}
 @media screen and (max-width: 480px){
 
   .salmon{
