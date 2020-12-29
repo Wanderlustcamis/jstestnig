@@ -15,6 +15,8 @@
 <script defer src="java/dom.js"> </script>
 <script defer src="java/Storage.js"> </script>
 <script defer src="java/eventos.js"> </script>
+<script defer src="java/carrousel.js"> </script>
+<script defer src="java/data.json"> </script>
 <!---<script defer src="java/json.js"> </script>/-->
 <script defer src="java/geolocations.js"> </script>
 <script defer src="java/jquery.js"> </script>
@@ -63,110 +65,23 @@
 
 </article>
 
-<div class="carousel-container" style="display:none">
-              <input type="radio" name="slide" id="slide1">
-              <input type="radio" name="slide" id="slide2">
-              <input type="radio" name="slide" id="slide3">
-              <input type="radio" name="slide" id="slide4">
-              <input type="radio" name="slide" id="slide5" checked>
-              <input type="radio" name="slide" id="slide6">
-              <input type="radio" name="slide" id="slide7">
-              <input type="radio" name="slide" id="slide8">
-              <input type="radio" name="slide" id="slide9">
-              <div class="carousel-viewport">
-                <div class="slide slide-tl">
-                  <label for="slide2" class="right">
-                      &rrarr;
-                    </label>
-                  <label for="slide4" class="down">
-                      &rrarr;
-                    </label>
-                </div>
-                <div class="slide slide-tc">
-                  <label for="slide1" class="left">
-                      &rrarr;
-                    </label>
-                  <label for="slide5" class="down">
-                      &rrarr;
-                    </label>
-                  <label for="slide3" class="right">
-                      &rrarr;
-                    </label>
-                </div>
-                <div class="slide slide-tr">
-                  <label for="slide2" class="left">
-                      &rrarr;
-                    </label>
-                  <label for="slide6" class="down">
-                      &rrarr;
-                    </label>
-                </div>
-                <div class="slide slide-ml">
-                  <label for="slide1" class="up">
-                      &rrarr;
-                    </label>
-                  <label for="slide5" class="right">
-                      &rrarr;
-                    </label>
-                  <label for="slide7" class="down">
-                      &rrarr;
-                    </label>
-                </div>
-                <div class="slide slide-mid">
-                  <label for="slide4" class="left">
-                     &rrarr;
-                    </label>
-                  <label for="slide2" class="up">
-                      &rrarr;
-                    </label>
-                  <label for="slide6" class="right">
-                      &rrarr;
-                    </label>
-                  <label for="slide8" class="down">
-                      &rrarr;
-                    </label>
-                </div>
-                <div class="slide slide-mr">
-                  <label for="slide3" class="up">
-                      &rrarr;
-                    </label>
-                  <label for="slide5" class="left">
-                      &rrarr;
-                    </label>
-                  <label for="slide9" class="down">
-                      &rrarr;
-                    </label>
-                </div>
-                <div class="slide slide-bl">
-                  <label for="slide4" class="up">
-                      &rrarr;
-                    </label>
-                  <label for="slide8" class="right">
-                      &rrarr;
-                    </label>
-                </div>
-                <div class="slide slide-bc">
-                  <label for="slide7" class="left">
-                      &rrarr;
-                    </label>
-                  <label for="slide5" class="up">
-                      &rrarr;
-                    </label>
-                  <label for="slide9" class="right">
-                      &rrarr;
-                    </label>
-                </div>
-                <div class="slide slide-br">
-                  <label for="slide8" class="left">
-                      &rrarr;
-                    </label>
-                  <label for="slide6" class="up">
-                      &rrarr;
-                    </label>
-                </div>
-              </div>
-            </div>
+<div>
+	<div id="planbox">
+		<a href="#" id="prev_btn">&laquo;</a>
+		<a href="#" id="next_btn">&raquo;</a>
+		<div id="carousel"></div>
+	</div>
 
+	<script id="speakerstpl" type="text/template">
+		{{#programs}}
+			<div class="speaker">
+				<img src="pix/{{shortname}}.jpg" alt="Photo of {{Info}}" />
+				<h3>{{program}}</h3>
+				<p>{{Info}}</p>
+			</div>
+		{{/programs}}
+	</script>
+</div>
 <br>
 <h4>Subscribe Here</h4>
 <button id="hide">hide</button><button id="show">show</button>

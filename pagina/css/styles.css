@@ -33,8 +33,8 @@ a:hover{
 p{
   font-size: 18px;
   text-align: center;
-  padding:10px;
-  margin:2px;
+  padding:20px;
+  margin:4px;
   display: contents;
 
 }
@@ -75,6 +75,12 @@ h4 {
   margin-right: 20px;
 }
 
+h5{
+  color: #AA4465;
+  margin:4px;
+  padding:4px;
+  margin-right: 20px;
+}
 button{
   border-radius: 25px;
   border-color: #0E1C36;
@@ -232,210 +238,59 @@ li{
 }
 /*carrousel*/
 
-.carousel-container,
-input {
-  display: none;
+#planbox {
+	width: 300px;
+	margin: 0 auto;
+	background: #93A1A1;
+	padding: 1px 20px;
+	border-radius: 10px;
+	overflow: hidden;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0), screen and (min--moz-device-pixel-ratio: 0) {
-  @supports (color: #ffffff) {
-    .fallback {
-      display: none !important;
-    }
-
-    .carousel-container,
-    .carousel-viewport {
-      display: block !important;
-      width: 600px;
-      height: 400px;
-    }
-
-    .carousel-viewport {
-      background-image: url("https://source.unsplash.com/random/1800x1200");
-      background-size: 1800px 1200px;
-      background-position: center center;
-      transition: background-position 0.3s linear;
-      -webkit-transition: background-position 0.3s linear;
-    }
-
-    /* Nav markers */
-    .slide {
-      display: none;
-      width: 600px;
-      height: 400px;
-      position: relative;
-      animation: fadeIn linear 0.7s;
-      -webkit-animation: fadeIn linear 0.7s;
-    }
-    .slide label {
-      position: absolute;
-      width: 28px;
-      height: 52px;
-      font-size: 50px;
-      color: #fff;
-    }
-
-    .slide label img {
-      width: 100%;
-      animation: pulse 1.5s ease-in-out infinite;
-      -webkit-animation: pulse 1.5s ease-in-out infinite;
-    }
-
-    label.up {
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%) rotate(-90deg);
-      -webkit-transform: translateX(-50%) rotate(-90deg);
-    }
-    label.left {
-      top: 50%;
-      left: 10px;
-      transform: translateY(-50%) rotate(-180deg);
-      -webkit-transform: translateY(-50%) rotate(-180deg);
-    }
-    label.right {
-      top: 50%;
-      right: 10px;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-    }
-    label.down {
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%) rotate(90deg);
-      -webkit-transform: translateX(-50%) rotate(90deg);
-    }
-
-    /* CHECK CONTROLS */
-    #slide1:checked ~ div .slide-tl {
-      display: block !important;
-    }
-    #slide1:checked ~ .carousel-viewport {
-      background-position: left top;
-    }
-
-    #slide2:checked ~ div .slide-tc {
-      display: block !important;
-    }
-    #slide2:checked ~ .carousel-viewport {
-      background-position: center top;
-    }
-
-    #slide3:checked ~ div .slide-tr {
-      display: block !important;
-    }
-    #slide3:checked ~ .carousel-viewport {
-      background-position: right top;
-    }
-
-    #slide4:checked ~ div .slide-ml {
-      display: block !important;
-    }
-    #slide4:checked ~ .carousel-viewport {
-      background-position: left center;
-    }
-
-    #slide5:checked ~ div .slide-mid {
-      display: block !important;
-    }
-    #slide5:checked ~ .carousel-viewport {
-      background-position: center center;
-    }
-
-    #slide6:checked ~ div .slide-mr {
-      display: block !important;
-    }
-    #slide6:checked ~ .carousel-viewport {
-      background-position: right center;
-    }
-
-    #slide7:checked ~ div .slide-bl {
-      display: block !important;
-    }
-    #slide7:checked ~ .carousel-viewport {
-      background-position: left bottom;
-    }
-
-    #slide8:checked ~ div .slide-bc {
-      display: block !important;
-    }
-    #slide8:checked ~ .carousel-viewport {
-      background-position: center bottom;
-    }
-
-    #slide9:checked ~ div .slide-br {
-      display: block !important;
-    }
-    #slide9:checked ~ .carousel-viewport {
-      background-position: right bottom;
-    }
-
-    @media screen and (max-width: 580px) {
-      .carousel-container,
-      .carousel-viewport,
-      .slide {
-        width: 100vw !important;
-        height: 66vw !important;
-      }
-
-      .carousel-viewport {
-        background-size: 300vw 198vw !important;
-      }
-    }
-
-    /* fallbacks */
-    div[class~="aolmail_fallback"],
-    #MessageViewBody .fallback {
-      display: block !important;
-    }
-
-    div[class~="aolmail_carousel-container"],
-    #MessageViewBody .carousel-container {
-      display: none !important;
-    }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1, 1);
-      }
-      50% {
-        transform: scale(1.1, 1.1);
-      }
-      100% {
-        transform: scale(1, 1);
-      }
-    }
-    @-webkit-keyframes pulse {
-      0% {
-        -webkit-transform: scale(1, 1);
-      }
-      50% {
-        -webkit-transform: scale(1.1, 1.1);
-      }
-      100% {
-        -webkit-transform: scale(1, 1);
-      }
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
-    @-webkit-keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-  }
+#planbox h3, #planbox h4 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
 }
 
+#planbox h3 {
+	font-size: 2em;
+	line-height: .9em;
+	font-family: 'Wendy One';
+	color: #115F79;
+}
 
+#planbox h4 {
+	color: #973C26;
+	font-weight: bold;
+	margin-bottom: 5px;
+	line-height: 1.2em;
+}
+
+#planbox img {
+	float: right;
+	margin-left: 10px;
+	border-radius: 10px;
+	width: 100px;
+}
+
+#planbox p {
+	color: #1E3A40;
+	font-size: .9em;
+}
+
+#planbox #next_btn, #planbox #prev_btn {
+	background: #d33682;
+	padding: 5px 10px;
+	border-radius: 10px;
+	margin: 10px 0;
+	display: inline-block;
+}
+
+#planbox a#next_btn, #planbox a#prev_btn {
+	text-decoration: none;
+	color: #FFF;
+}
+
+}
 /*end of carrousel*/
