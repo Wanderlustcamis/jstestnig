@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$.getJSON('data.json', function(info){
+	$.getJSON ('data.json'), function(info){
 
 			var output='';
 			for (var i = 0; i <= info.links.length-1; i++) {
@@ -17,6 +17,6 @@ $(document).ready(function() {
 			var update = document.getElementById('links');
 			update.innerHTML = output;
 
-	}); //getJSON
+	}; //getJSON
 
 }); // ready
