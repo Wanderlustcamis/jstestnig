@@ -236,6 +236,14 @@ li{
 
   }
 }
+
+#plan{
+  margin: 10px;
+  padding: 5px;
+  align-items:flex-end;
+
+
+}
 /*carrousel*/
 
 #planbox {
