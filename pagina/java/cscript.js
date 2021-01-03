@@ -10,7 +10,7 @@ request.onreadystatechange = function() {
 	if ((request.status === 200) &&
 		(request.readyState === 4)) {
 
-			info = JSON.parse(request.responseText);
+		var	info = JSON.parse(request.responseText);
 
 			var output='';
 			for (var i = 0; i <= info.links.length-1; i++) {
