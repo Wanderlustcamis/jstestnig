@@ -246,6 +246,11 @@ li{
 }
 /*carrousel*/
 
+#carousel{
+  height: auto;
+  width: auto;
+}
+
 #planbox {
 	width: 300px;
 	margin: 0 auto;

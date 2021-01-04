@@ -1,21 +1,20 @@
-$(document).ready(function() {
+	$function(carousel)
 
-	$.getJSON ('data.json'), function(info){
+		$.getJSON('data.json', function(data){
+			var template = $('planbox').html();
+			var html = Mustache.to_html(template, data);
+			$('#carousel').html(html);
 
-			var output='';
-			for (var i = 0; i <= info.links.length-1; i++) {
-				for (key in info.links[i]) {
-					if (info.links[i].hasOwnProperty(key)) {
-						output += '<li>' +
-						'<a href = "' + info.links[i][key] +
-						'">' + key + '</a>';
-						'</li>';
-			    }
-				}
-			}
+			$('#carousel').cycle({
+				fx: 'fade',
+				pause: 1,
+				next: '#next_btn',
+				prev: '#prev_btn',
+				speed: 500,
+				timeout: 10000,
 
-			var update = document.getElementById('links');
-			update.innerHTML = output;
+			});
+
 
 	}; //getJSON
 

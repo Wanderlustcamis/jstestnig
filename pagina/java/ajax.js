@@ -2,7 +2,7 @@ $("document").ready(function(){
   getData();
 });
 function getData(){
-  $.get("data.txt", successFn);
+  $.get("data.json", successFn);
 }
 function successFn(result){
   consol.log("resultados");

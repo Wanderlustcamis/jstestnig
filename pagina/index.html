@@ -14,10 +14,9 @@
 <script defer src="java/array2.js"> </script>
 <script defer src="java/Storage.js"> </script>
 <script defer src="java/eventos.js"> </script>
-<script defer src="java/carrousel.js"> </script>
+<script defer src="java/carrousel.js"> </script>/
 <script defer src="java/data.json"> </script>
-<script defer src="java/cscript.js"> </script>
-<script defer src="java/ajax.js"> </script>
+<!---<script defer src="java/cscript.js"> </script>-->
 <!---<script defer src="java/json.js"> </script>/-->
 <script defer src="java/geolocations.js"> </script>
 <script defer src="java/jquery.js"> </script>
@@ -26,6 +25,9 @@
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script defer scr="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script defer scr="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js"></script>
+<script defer scr="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+
 
 
 	<meta charset="UTF-8">
@@ -74,15 +76,16 @@
 		<div id="carousel"></div>
 	</div>
 
-	<script id="speakerstpl" type="text/template">
+	<script id="planbox" type="text/template">
 		{{#programs}}
-			<div class="program">
+			<div class="programs">
 				<img src="pix/{{shortname}}.jpg" alt="Photo of {{Info}}" />
 				<h3>{{program}}</h3>
 				<p>{{Info}}</p>
 			</div>
 		{{/programs}}
 	</script>
+
 </div>
 <br>
 <h4>Subscribe Here</h4>
@@ -108,14 +111,15 @@
         <input type="password" id="clave" placeholder="you will get your passcode as sms" onblur="save(this)">
 			</li>
 			<li>
-				<label for="plan" >Plan</label>
-  		<select id="plan" name="country"  onblur="save(this)">
+				<label for="plan">Plan</label>
+  		<select id="cal" name="country"  onblur="save(this)">
   		<option value="yo" onblur="save(this)">yoga</option>
   		<option value="me" onblur="save(this)">meditation</option>
   			<option value="ex" onblur="save(this)">Exercise</option>
 				<option value="yomed" onblur="save(this)">Yoga and Meditation</option>
 				<option value="yoex" onblur="save(this)">Yoga and Exercise</option>
   </select>
+
 </form>
 </li>
 <li>
