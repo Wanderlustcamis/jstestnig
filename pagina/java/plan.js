@@ -49,10 +49,10 @@ window.onload = function plan(){
       n3= exe (n3)
         switch (ope){
           case "+":
-            return n1 + n2
+            return n1 + n2 - '10'
             break
           case "+":
-            return n1 + n3
+            return n1 + n3 - '5'
             break
 
           default:

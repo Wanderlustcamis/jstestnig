@@ -1,4 +1,4 @@
-	$function(carousel)
+	$function carousel()
 
 		$.getJSON('data.json', function(data){
 			var template = $('planbox').html();

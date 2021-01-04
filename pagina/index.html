@@ -70,7 +70,7 @@
 </article>
 
 <div>
-	<div id="planbox">
+	<div id="planbox" onload="carousel()">
 		<a href="#" id="prev_btn">&laquo;</a>
 		<a href="#" id="next_btn">&raquo;</a>
 		<div id="carousel"></div>
@@ -96,28 +96,28 @@
 	<ul>
 		<li>
       <label for="nombre">Name</label>
-        <input type="text" id="clave" placeholder="Add name" onblur="save(this)">
+        <input type="text" id="name" placeholder="Add name" onblur="guardoCampo(this)">
 					</li>
 				<li>
       <label for="Telephone">Telephone</label>
-        <input type="tel" id="clave" placeholder="Add phone" onblur="save(this)">
+        <input type="tel" id="tel" placeholder="Add phone" onblur="guardoCampo(this)">
 			</li>
 		<li>
       <label for="email">Email</label>
-        <input type="email" id="clave" placeholder="Add email" onblur="save(this)">
+        <input type="email" id="email" placeholder="Add email" onblur="guardoCampo(this)">
 			</li>
 			<li>
       <label for="password">Password</label>
-        <input type="password" id="clave" placeholder="you will get your passcode as sms" onblur="save(this)">
+        <input type="password" id="password" placeholder="you will get your passcode as sms" onblur="guardoCampo(this)">
 			</li>
 			<li>
 				<label for="plan">Plan</label>
-  		<select id="cal" name="country"  onblur="save(this)">
-  		<option value="yo" onblur="save(this)">yoga</option>
-  		<option value="me" onblur="save(this)">meditation</option>
-  			<option value="ex" onblur="save(this)">Exercise</option>
-				<option value="yomed" onblur="save(this)">Yoga and Meditation</option>
-				<option value="yoex" onblur="save(this)">Yoga and Exercise</option>
+  		<select id="pla" name="plan" onblur="guardoCampo(this)">
+  			<option value="yo" onblur="guardoCampo(this)">yoga</option>
+  			<option value="me" onblur="guardoCampo(this)">meditation</option>
+  			<option value="ex" onblur="guardoCampo(this)">Exercise</option>
+				<option value="yomed" onblur="guardoCampo(this)">Yoga and Meditation</option>
+				<option value="yoex" onblur="guardoCampo(this)">Yoga and Exercise</option>
   </select>
 
 </form>
