@@ -5,7 +5,7 @@ var save = document.getElementById("save")
 var imput = document.getElementById("save")
 
 
-function save(clave){
+object.onblur = function save(clave){
   if (clave.value.trim() !== '')
   ls.setItem(clave.id, clave.value)
 }
