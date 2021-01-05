@@ -1,24 +1,24 @@
-var ls = localStorage;
-var d = document;
+var ls = localStorage
+var d = document
 var clave = document.getElementById("clave")
 var save = document.getElementById("save")
 
- function retrive(){
-   d.body.onload =
-    retrive();
+
+
+function guardarCampo(clave){
+  ls.setItem(clave.id, clave.value)
 }
 
-function save(save)
-debugger {
-    if (save.value.trim() !== '')
-        ls.setItem(save.id, save.value)
+function retrive(){
+  d.body.onload =
+   retrive();
 }
 
 function retrive() {
     if (ls.length > 0) {
         for (let i = 0; i < ls.length; i++) {
             clave = ls.key(i)
-            document.getElementById("clave").value = ls.getItem("clave")
+            document.getElementById(clave).value = ls.getItem(clave)
         }
     }
 }
@@ -32,7 +32,7 @@ function confirm() {
    if (ls.length > 0) {
        for (let i = 0; i < ls.length; i++) {
            clave = ls.key(i)
-           document.getElementById("clave").value = ls.getItem("save")
+           document.getElementById(clave).value = ls.getItem(save)
        }
    }
 }

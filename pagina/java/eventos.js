@@ -1,11 +1,14 @@
 let imagen = document.getElementById('imagen')
+
 window.onload = function mouse (){
+
 imagen.addEventListener("mouseover", () => imagen.style.bordercolor = "green")
 imagen.addEventListener("mouseout",() => imagen.style.bordercolor = "black")
 
 }
 
 window.onload = function Color(){
+
   document.getElementById('imagen').onmouseover = Color;
   document.getElementById('imagen').onmouseout = Color;
 

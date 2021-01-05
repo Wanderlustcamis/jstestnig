@@ -97,22 +97,22 @@
 	<p>Please fill in the following filds;</p>
 <br>
 		<label for="nombre">Name</label>
-			<input type="text" id="clave" placeholder="Add name" onblur="save(this)">
+			<input type="text" id="clave" placeholder="Add name" onblur="guardarCampo(this)">
 
 		<label for="Telephone">Telephone</label>
-			<input type="tel" id="clave" placeholder="Add phone" onblur="save(this)">
+			<input type="tel" id="clave" placeholder="Add phone" onblur="guardarCampo(this)">
 
 		<label for="email">Email</label>
-			<input type="email" id="clave" placeholder="Add email" onblur="save(this)">
+			<input type="email" id="clave" placeholder="Add email" onblur="guardarCampo(this)">
 
 		<label for="password">Password</label>
-			<input type="password" id="clave" placeholder="you will get your passcode as sms" onblur="save(this)">           
-						<select id="pla" name="plan" onblur="save(this)">
-							<option value="yo" onblur="save(this)">yoga</option>
-							<option value="me" onblur="save(this)">meditation</option>
-							<option value="ex" onblur="save(this)">Exercise</option>
-							<option value="yomed" onblur="save(this)">Yoga and Meditation</option>
-	 					<option value="yoex" onblur="save(this)">Yoga and Exercise</option>
+			<input type="password" id="clave" placeholder="you will get your passcode as sms" onblur="guardarCampo(this)">           
+						<select id="pla" name="plan" onblur="guardarCampo(this)">
+							<option value="yo" onblur="guardarCampo(this)">yoga</option>
+							<option value="me" onblur="guardarCampo(this)">meditation</option>
+							<option value="ex" onblur="guardarCampo(this)">Exercise</option>
+							<option value="yomed" onblur="guardarCampo(this)">Yoga and Meditation</option>
+	 					<option value="yoex" onblur="guardarCampo(this)">Yoga and Exercise</option>
 				</select>
 				<button class="right btn-large btn-floating blue waves-effect waves-light" onclick= "navegar('confirm.html')"><i class="material-icons">></i></button>
 
