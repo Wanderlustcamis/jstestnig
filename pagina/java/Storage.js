@@ -2,15 +2,15 @@ var ls = localStorage
 var d = document
 var clave = document.getElementById("clave")
 var save = document.getElementById("save")
+var imput = document.getElementById("clave")
 
 
-
-function guardarCampo(clave){
+function save(clave){
+  if (clave.value.trim() !== '')
   ls.setItem(clave.id, clave.value)
 }
 
-function retrive(){
-  d.body.onload =
+  d.body.onload = function retrive(){
    retrive();
 }
 
@@ -28,11 +28,11 @@ function navegar(page) {
 }
 
 function confirm() {
-  debugger
+  //debugger
    if (ls.length > 0) {
        for (let i = 0; i < ls.length; i++) {
            clave = ls.key(i)
-           document.getElementById(clave).value = ls.getItem(save)
+           document.getElementById(clave).innerText = ls.getItem(save)
        }
    }
 }
