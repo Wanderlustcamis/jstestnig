@@ -2,7 +2,7 @@ var ls = localStorage
 var d = document
 var clave = document.getElementById("clave")
 var save = document.getElementById("save")
-var imput = document.getElementById("clave")
+var imput = document.getElementById("save")
 
 
 function save(clave){
@@ -24,7 +24,7 @@ function retrive() {
 }
 
 function navegar(page) {
-    location.href = page
+    location.href = confirm.html
 }
 
 function confirm() {
