@@ -2,12 +2,14 @@ var ls = localStorage
 var d = document
 var clave = document.getElementById("clave")
 var save = document.getElementById("save")
-var imput = document.getElementById("save")
+var imput = document.getElementById("clave")
 
 
 object.onblur = function save(clave){
   if (clave.value.trim() !== '')
   ls.setItem(clave.id, clave.value)
+
+  innerText.value =ls.getItem(clave)
 }
 
   d.body.onload = function retrive(){

@@ -106,15 +106,15 @@
 			<input type="email" id="clave" placeholder="Add email" onblur="save()">
 
 		<label for="password">Password</label>
-			<input type="password" id="clave" placeholder="you will get your passcode as sms" onblur="save()">           
-						<select id="pla" name="plan" onblur="save()">
-							<option value="yo" onblur="save()">yoga</option>
-							<option value="me" onblur="save()">meditation</option>
-							<option value="ex" onblur="save()">Exercise</option>
-							<option value="yomed" onblur="save()">Yoga and Meditation</option>
-	 					<option value="yoex" onblur="save()">Yoga and Exercise</option>
+			<input type="password" id="clave" placeholder="you will get your passcode as sms">           
+						<select id="pla" name="plan">
+							<option value="yo">yoga</option>
+							<option value="me">meditation</option>
+							<option value="ex">Exercise</option>
+							<option value="yomed">Yoga and Meditation</option>
+	 					<option value="yoex">Yoga and Exercise</option>
 				</select>
-				<button class="right btn-large btn-floating blue waves-effect waves-light" id="save" onclick= "navegar('confirm.html')"><i class="material-icons">></i></button>
+				<button class="right btn-large btn-floating blue waves-effect waves-light" id="save" onblur="save(clave)" onclick= "navegar('confirm.html')"><i class="material-icons">></i></button>
 
 				</div>      
 </form>
