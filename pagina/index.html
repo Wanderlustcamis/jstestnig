@@ -97,24 +97,24 @@
 	<p>Please fill in the following filds;</p>
 <br>
 		<label for="nombre">Name</label>
-			<input type="text" id="clave" placeholder="Add name" onblur="save()">
+			<input type="text" id="nom" placeholder="Add name">
 
 		<label for="Telephone">Telephone</label>
-			<input type="tel" id="clave" placeholder="Add phone" onblur="save()">
+			<input type="tel" id="tel" placeholder="Add phone">
 
 		<label for="email">Email</label>
-			<input type="email" id="clave" placeholder="Add email" onblur="save()">
+			<input type="email" id="email" placeholder="Add email">
 
-		<label for="password">Password</label>
+		<label for="password" id="pw">Password</label>
 			<input type="password" id="clave" placeholder="you will get your passcode as sms">           
 						<select id="pla" name="plan">
-							<option value="yo">yoga</option>
-							<option value="me">meditation</option>
-							<option value="ex">Exercise</option>
-							<option value="yomed">Yoga and Meditation</option>
-	 					<option value="yoex">Yoga and Exercise</option>
+							<option id="yo">yoga</option>
+							<option id="me">meditation</option>
+							<option id="ex">Exercise</option>
+							<option id="yomed">Yoga and Meditation</option>
+	 					<option id="yoex">Yoga and Exercise</option>
 				</select>
-				<button class="right btn-large btn-floating blue waves-effect waves-light" id="save" onblur="save(clave)" onclick= "navegar('confirm.html')"><i class="material-icons">></i></button>
+				<a href="confirm.html"><button class="right btn-large btn-floating blue waves-effect waves-light" id="save" onblur="save(clave)"><i class="material-icons">submit</i></button></a>
 
 				</div>      
 </form>

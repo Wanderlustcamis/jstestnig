@@ -1,4 +1,5 @@
-	$function carousel()
+	var carousel = document.getElementById('carousel')
+	function carousel(){
 
 		$.getJSON('data.json', function(data){
 			var template = $('planbox').html();
@@ -14,8 +15,7 @@
 				timeout: 10000,
 
 			});
+		}
 
-
-	}; //getJSON
-
-}); // ready
+)
+}
