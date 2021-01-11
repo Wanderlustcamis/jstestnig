@@ -103,11 +103,11 @@ button:hover{
   margin: 4px;
 }
 .navbar-brand{
-  background-color: #BAD1CD
-  color:#F2D1C9
+  background-color: #BAD1CD;
+  color:#F2D1C9;
 }
 .navbar{
-  background-color: #BAD1CD
+  background-color: #BAD1CD;
   color:#BAD1CD;
 }
 .img-fluid{
@@ -305,5 +305,22 @@ li{
 	color: #FFF;
 }
 
-}
 /*end of carrousel*/
+
+/*confirm*/
+.con{
+  display:inline-flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 2px;
+
+}
+.ret{
+  display:inline-flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 2px;
+
+}
+
+/*end of confirm*/

@@ -8,22 +8,34 @@
     <link rel="stylesheet" href="css/styles.css">
 
 <script src="java/Storage.js"> </script>
-<script src="java/plan.js"> </script>
 
      </head>
-     <body onload="retrive()">
+     <body class="con" onload="retrieve()">
          <h4>Please confirm your info:</h4>
+         <table class= "ret">
+           <div class = "ret">
          <label for="nombre">Name</label>
-         <p id="nom"></p>
+         <p id="nom2"></p>
+         </div>
+         <div class="ret">
          <label for="telephone">Phone</label>
-         <p  id="tel"></p>
+         <p  id="tel2"></p>
+         </div>
+         <div class="ret">
          <label for="email">Email</label>
-         <p id="email"></p>
-         <label for="password">Password</label>
-         <p id="pw"></p>
+         <p id="email2"></p>
+         </div>
+         <div class="ret">
          <label for="plan">Plan</label>
-         <p id="pl"></p>
+         <p id="pl2"></p>
+         </div>
+         <div class="ret">
+         <label for="price">Price</label>
+         <p id="price"></p>
+         </div>
+         </table>
+        <br>
          <button class="right btn-large btn-floating green darken-2 waves-effect waves-light" onclick="confirmed()"><i class="material-icons">check</i></button>
-         <button class="right btn-large btn-floating red waves-effect waves-light" onclick="navegar('index.html')"><i class="material-icons"><</i></button>
+         <button class="right btn-large btn-floating red waves-effect waves-light"><a href="index.html"><i class="material-icons"><</i></a></button>
      </body>
 </html>

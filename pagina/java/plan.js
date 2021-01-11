@@ -1,9 +1,28 @@
 window.onload = function plan(){
+  debugger
   document.getElementById('plan')
-  var plan = ["yoga", "meditation", "Exercise", "yoga meditation", "yoga excercise"]
+  let plan = JSON.parse(planDetails).Plan
 
-    for (var i=0 ; i< plan.length; i++){
-      if (i=0){
+    switch (plan) {
+      case "Yoga":
+        document.getElementById("price").innerText("$15.00/mo");
+        break;
+      case "Meditation":
+        document.getElementById("price").innerText("$15.00/mo");
+        break;
+      case "Exercise":
+        document.getElementById("price").innerText("$19.00/mo");
+        break;
+      case "Yoga and Meditation":
+        document.getElementById("price").innerText("$28.00/mo");
+        break;
+      case "Yoga and Exercise":
+        document.getElementById("price").innerText("$30.00/mo");
+        break;
+    } 
+    
+    //(var i=0 ; i< plan.length; i++){
+      /* if (i=0){
         document.CreateElement("p")
         title.id = "plan"
         title.innerText = "15 usd"
@@ -28,9 +47,9 @@ window.onload = function plan(){
         title.id = "plan"
         title.innerText = "30 usd"
       }
-    }
+    } */
 
-    var plans = new Object ()
+  /*   //var plans = new Object ()
     plans.yoga = "juice";
     plans.medi = "yoga";
     plans.exe ="exercise" ;
@@ -60,4 +79,5 @@ window.onload = function plan(){
         }
 
 
+} */
 }

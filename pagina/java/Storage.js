@@ -1,21 +1,16 @@
 var ls = localStorage
-var d = document
+/* var d = document
 var clave = document.getElementById("clave")
 var save = document.getElementById("save")
-var imput = document.getElementById("clave")
+var imput = document.getElementById("clave") */
 
-var no = document.getElementById('nom').value
-var te = document.getElementById('tel').value
-var em = document.getElementById('email').value
-var  pw = document.getElementById('pw').value
-var yo = document.getElementById('yo').value
-var me = document.getElementById('me').value
-var ex = document.getElementById('ex').value
-var ym = document.getElementById('yomed').value
-var yx = document.getElementById('yoex').value
-var pl = document.getElementById('pla').value
+let no = document.getElementById('nom').value
+let te = document.getElementById('tel').value
+let em = document.getElementById('email').value
+let pl = document.getElementById('pla').value
+let planDetails = ls.getItem("Plan")
 
-var jsoninfo = {
+/* var jsoninfo = {
   no: nom,
   te: tel,
   em: email,
@@ -26,45 +21,79 @@ var jsoninfo = {
   ym: yomed,
   yx: yoex,
   pl: pla,
+} */
+
+// alert(JSON.stringify(jsoninfo))
+
+
+ function behold(){
+
+  no = document.getElementById('nom').value
+  te = document.getElementById('tel').value
+  em = document.getElementById('email').value
+  pl = document.getElementById('pla').value
+
+  let jsonPlan = {
+    "Name": no,
+    "Tel": te,
+    "Email": em,
+    "Plan": pl,
+  }
+
+  ls.setItem("Plan", JSON.stringify(jsonPlan))
+  //innerText=ls.getItem(clave)
+
 }
 
-alert(JSON.stringify(jsoninfo))
-
-
- onblur = function save(clave){
-
-  ls.setItem(clave.id, clave.innerText)
-
-  innerText=ls.getItem(clave)
-}
-
-  d.body.onload = function retrive(){
+/*   d.body.onload = function retrive(){
    retrive();
-}
+} */
 
-function retrive() {
-    if (ls.length > 0) {
-        for (let i = 0; i < ls.length; i++) {
-            clave = ls.key(i)
-            document.getElementById('clave').innerText = ls.getItem('clave')
+function retrieve() {
+  let planDetails = localStorage.getItem("Plan")
+  let nom2 = JSON.parse(planDetails).Name
+  let tel2 = JSON.parse(planDetails).Tel
+  let em2 = JSON.parse(planDetails).Email
+  let pl2 = JSON.parse (planDetails).Plan
+  switch (pl2) {
+    case "Yoga":
+      document.getElementById("price").innerText = "$15.00/mo";
+      break;
+    case "Meditation":
+      document.getElementById("price").innerText = "$15.00/mo";
+      break;
+    case "Exercise":
+      document.getElementById("price").innerText = "$19.00/mo";
+      break;
+    case "Yoga and Meditation":
+      document.getElementById("price").innerText = "$28.00/mo";
+      break;
+    case "Yoga and Exercise":
+      document.getElementById("price").innerText = "$30.00/mo";
+      break;
+  } 
+            document.getElementById("nom2").innerText = `${nom2}`;
+            document.getElementById('tel2').innerText = `${tel2}`;
+            document.getElementById('email2').innerText = `${em2}`;
+            document.getElementById('pl2').innerText = `${pl2}`;
+            
+
+/*             var jsoninfo = {
+              no: nom,
+              te: tel,
+              em: email,
+              pl: pla,
+            } */
+
+            //alert(JSON.stringify(jsoninfo))
+
+
         }
-    }
-}
 
-
-function confirm() {
-  //debugger
-   if (ls.length > 0) {
-       for (let i = 0; i < ls.length; i++) {
-           clave = ls.key(i)
-           document.getElementById('clave').innerText = ls.getItem('save')
-       }
-   }
-}
 
 function confirmed() {
     alert('thanks for the subcription!')
     ls.clear()
 }
 
-document.addEventListener("DOMContentLoaded", confirm)
+//document.addEventListener("DOMContentLoaded", confirm)

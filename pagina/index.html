@@ -7,15 +7,9 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script defer src="java/yoga.js"> </script>
-<script defer src="java/objetos.js"> </script>
-<script defer src="java/objetodos.js"> </script>
-<script defer src="java/array.js"> </script>
-<script defer src="java/array2.js"> </script>
 <script defer src="java/Storage.js"> </script>
 <script defer src="java/eventos.js"> </script>
-<script defer src="java/carrousel.js"> </script>/
-<script defer src="java/data.json"> </script>
+<!-- <script defer src="java/data.json"> </script> -->
 <!---<script defer src="java/cscript.js"> </script>-->
 <!---<script defer src="java/json.js"> </script>/-->
 <script defer src="java/geolocations.js"> </script>
@@ -40,13 +34,10 @@
 
 			<nav role="navigation" class="primary-navigation navbar navbar-expand-md">
 		  <ul>
-		    <li><a href="#">week</a></li>
-		    <li><a href="#">Exercise</a></li>
-
-		    <li><a href="#">Healthy Lifestyle</a></li>
-		    <li><a href="#">Tips</a></li>
-		    <li><a href="#">Meditation</a></li>
-		    <li><a href="#">Localizame</a></li>
+		    <li><a href="#" onclick="ver()">Healthy Lifestyle</a></li>
+		    <li><a href="#" onclick="tips ()">Tips</a></li>
+		    <li><a href="#" onclick="med()">Meditation</a></li>
+		    <li><a href="#" onclick="localizame()">Localizame</a></li>
 		  </ul>
 		</nav>
 	</nav>
@@ -54,7 +45,7 @@
 	</header>
 	<br>
 	<p id="latlong"></p>
-	<div id="mapContainer" style="width: 480px, height: 400px"><div>
+	<div id="mapContainer"><div>
 	<br>
 	<br>
 	<h1>Khloe</h1>
@@ -64,29 +55,12 @@
 
 	<article class="txt1" id="col">
 		<h2>GET YOUR RAVANGE BODY IN A MONTH</h2>
-		<p>follow me for work out tips, food suggestions and more!</p>
+		<p>Subscribe for work out tips, food suggestions and more!</p>
 		<p>Let's work on getting our confidence back after a break up together. You will see results in a month if you follow my strict work out and diet</p>
 
 </article>
 
-<div>
-	<div id="planbox" onload="carousel()">
-		<a href="#" id="prev_btn">&laquo;</a>
-		<a href="#" id="next_btn">&raquo;</a>
-		<div id="carousel"></div>
-	</div>
 
-	<script id="planbox" type="text/template">
-		{{#programs}}
-			<div class="programs">
-				<img src="pix/{{shortname}}.jpg" alt="Photo of {{Info}}" />
-				<h3>{{program}}</h3>
-				<p>{{Info}}</p>
-			</div>
-		{{/programs}}
-	</script>
-
-</div>
 <br>
 <h4>Subscribe Here</h4>
 <button id="hide">hide</button><button id="show">show</button>
@@ -108,27 +82,29 @@
 		<label for="password" id="pw">Password</label>
 			<input type="password" id="clave" placeholder="you will get your passcode as sms">           
 						<select id="pla" name="plan">
-							<option id="yo">yoga</option>
-							<option id="me">meditation</option>
-							<option id="ex">Exercise</option>
-							<option id="yomed">Yoga and Meditation</option>
-	 					<option id="yoex">Yoga and Exercise</option>
+							<option>Yoga</option>
+							<option>Meditation</option>
+							<option>Exercise</option>
+							<option>Yoga and Meditation</option>
+	 					<option>Yoga and Exercise</option>
 				</select>
-				<a href="confirm.html"><button class="right btn-large btn-floating blue waves-effect waves-light" id="save" onblur="save(clave)"><i class="material-icons">submit</i></button></a>
+				<button id="save" onclick="behold()"><a href="confirm.html">submit</a></button>
 
 				</div>      
 </form>
 <article>
 	<div>
 	</div>
+	<br>
 	<h1>Food Ideas</h1>
 	<h2>Recipe</h2>
 	<h3>Herb-Crusted Salmon and Grilled Asparagus Recipe</h3>
 <div class="salmon" id="col">
 
 	<img class="img-fluid sa" id="imagen" src="pic/salmon.jpg" alt="salmon">
+	<br>
 	<p>As well as being really tasty, this dish also looks great, so it’s a great meal to make if you are having a special dinner.</p>
-
+<br>
 </div>
 <div class="ind" id="col">
 	<ul class="prep" id="col">
