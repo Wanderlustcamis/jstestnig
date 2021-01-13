@@ -80,6 +80,7 @@ h5{
   margin:4px;
   padding:4px;
   margin-right: 20px;
+  height: 10px;
 }
 button{
   border-radius: 25px;
@@ -244,8 +245,68 @@ li{
 
 
 }
+.centert{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
 /*carrousel*/
+.center{
+  display: flex;
+  flex-direction: column;
+  margin:40px;
+  padding: 10px;
+  align-items: center;
+}
+.centerc{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  
+}
+.centerd{
+  display:inline-flex;
+  flex-direction:row;
+  align-items: center;
+  margin:20px;
+  padding:20px;
+}
+.piccar{
+  padding: 5px;
+  align-items: center;
+  padding-left: 40px;
+  margin-right: 40px;
 
+}
+.carousel-item{
+  padding:40px;
+  align-items: center;
+  margin: 20;
+  height: 50%;
+  width: 50%;
+}
+
+.carousel-control-prev{
+  margin-left: 40px;
+  width: 20px;
+}
+.carousel-control-next{
+  width: 20px;
+}
+.carousel-caption{
+  align-items:center;
+  padding-left: 50px;
+  height: 100px;
+
+}
+
+.carousel{
+  align-items: center;
+  height: 50%;
+  width: 50%;
+}
 /*end of carrousel*/
 
 /*confirm*/
